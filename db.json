@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Samsung galaxy s22",
+      "price": 900,
+      "description": "Ultimo nato nella famiglia Galaxy"
+    },
+    {
+      "id": 2,
+      "name": "Samsung galaxy s10",
+      "price": 700,
+      "description": "Primo nato nella famiglia Galaxy"
+    },
+    {
+      "id": 3,
+      "name": "Apple IPhone 13",
+      "price": 800,
+      "description": "Il telefono della mela"
+    },
+    {
+      "id": 4,
+      "name": "Nokia 3310",
+      "price": 50,
+      "description": "Per imparare a palleggiare"
+    }
+  ]
+}

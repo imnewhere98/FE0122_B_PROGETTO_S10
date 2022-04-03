@@ -1,0 +1,31 @@
+<h4>I nostri smartphone</h4>
+
+<div class="container mt-5">
+  <div class="row">
+    <div
+      class="col-6 mb-3"
+      *ngFor="let prodotto of ProdottiInArrivo; let i = index"
+    >
+      <div class="card">
+        <img [src] class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">{{ prodotto.name }}</h5>
+          <img src="assets/img/nokia.jpg" class="img-fluid">
+
+          <!-- da vedere ngIf -->
+          <button
+            class="btn btn-primary m-3"
+            [routerLink]="['dettagli']"
+            (click)="specifiche(prodotto)"
+          >
+            Dettagli
+          </button>
+
+          <button class="btn btn-primary"  (click)="aggiungiCarrello(prodotto)">
+            Aggiungi al carrello
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

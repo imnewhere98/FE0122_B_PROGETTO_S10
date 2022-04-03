@@ -1,0 +1,47 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6 mb-3" *ngFor="let dettaglio of pippo">
+      <div class="card">
+        <img [src] class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">{{ dettaglio.name }}</h5>
+          <ul>
+            <li>{{ dettaglio.price }}€</li>
+          </ul>
+          <button class="btn btn-danger" (click)="elimina(dettaglio)">
+            Elimina
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h5>Inserisci dati e premi invia per confermare l'ordine</h5>
+  <div class="row">
+    <div class="col">
+      <form>
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input id="nome" class="form-control" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" class="form-control" type="email" />
+        </div>
+        <div class="row">
+          <div class="col d-grid gap-2">
+            <button
+              type="submit"
+              class="btn btn-primary mt-4"
+              (click)="click()"
+            >
+              Invia Ordine
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
